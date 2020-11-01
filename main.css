@@ -1,0 +1,13 @@
+body{
+    display: grid;
+    margin: 0;
+
+}
+
+.image{
+    background-image: url("images/pikachu.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 120px;
+}
