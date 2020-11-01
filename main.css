@@ -1,7 +1,28 @@
 body{
     display: grid;
     margin: 0;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 400px 400px 50px;
+    grid-template-areas:
+            "header header header"
+            "members members members"
+            "members members members"
+            "footer footer footer";
+}
 
+.header{
+    grid-area: header;
+    display: flex;
+}
+.members{
+    grid-area: members;
+    display: flex;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
 }
 
 .image{
@@ -10,4 +31,12 @@ body{
     background-size: cover;
     height: 300px;
     width: 120px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
 }
