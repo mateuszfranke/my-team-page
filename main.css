@@ -1,18 +1,35 @@
 body{
     display: grid;
     margin: 0;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 200px 500px 50px;
     grid-template-areas:
-            "header header header"
-            "members members members"
-            "footer footer footer";
+            "header header header header"
+            "members members members members"
+            "footer footer footer footer";
 }
 
 .header{
     grid-area: header;
     display: flex;
+    justify-content: space-evenly;
 }
+
+.header__title{
+    font-family: 'PT Serif', serif;
+    align-self: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header-subtitle{
+    width: 400px;
+}
+
+.header-subtitle-tittle{
+    font-family: 'Poppins', sans-serif;
+}
+
 .members{
     grid-area: members;
     background-color: grey;
