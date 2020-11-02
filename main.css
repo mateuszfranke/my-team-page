@@ -2,10 +2,9 @@ body{
     display: grid;
     margin: 0;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px 400px 400px 50px;
+    grid-template-rows: 200px 500px 50px;
     grid-template-areas:
             "header header header"
-            "members members members"
             "members members members"
             "footer footer footer";
 }
@@ -16,7 +15,9 @@ body{
 }
 .members{
     grid-area: members;
+    background-color: grey;
     display: flex;
+    justify-content: center;
 }
 
 .footer{
@@ -25,13 +26,26 @@ body{
     color: white;
 }
 
-.image{
+.member{
+    padding: 16px 40px
+}
+
+.member-2{
+   align-self: flex-end;
+}
+
+.member__image{
     background-image: url("images/pikachu.jpg");
     background-position: center;
     background-size: cover;
     height: 300px;
     width: 120px;
 }
+
+.member__name{
+    font-weight: 600;
+}
+
 p{
     font-family: 'Poppins', sans-serif;
 }
