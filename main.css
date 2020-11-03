@@ -2,7 +2,7 @@ body{
     display: grid;
     margin: 0;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 200px 500px 500px 50px;
+    grid-template-rows: 200px 500px 500px 75px;
     grid-template-areas:
             "header header header header"
             "members1 members1 members1 members1"
@@ -86,6 +86,11 @@ h1{
 
 .footer{
     grid-area: footer;
-    background-color: black;
-    color: white;
+    color: #A9A9A9;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-self: end;
+    padding: 16px 0px;
+    font-size: 13px;
+
 }
