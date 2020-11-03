@@ -57,18 +57,49 @@ body{
 }
 
 .member-2{
-   align-self: flex-end;
+    align-self: flex-end;
+    /*background-image: url("images/people-2442565_640.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*width: 100px;*/
+
 }
+.member-2{
+    align-self: flex-end;
+
+}
+.member-1__image{
+    background-image: url("images/entrepreneur-593371_640.jpg");
+}
+
+.member-2__image{
+    background-image: url("images/people-2442565_640.jpg");
+}
+
+.member-3__image{
+    background-image: url("images/girl-1828538_640.jpg");
+}
+
+.member-4__image{
+    background-image: url("images/portrait-3204843_640.jpg");
+}
+
+.member-5__image{
+    background-image: url("images/girl-657753_640.jpg");
+}
+.member-6__image{
+    background-image: url("images/beanie-2562646_640.jpg");
+}
+
 .member-5{
     align-self: flex-end;
 }
 
 .member__image{
-    background-image: url("images/pikachu.jpg");
     background-position: center;
     background-size: cover;
     height: 300px;
-    width: 120px;
+    width: 140px;
 }
 
 .member__name{
