@@ -12,8 +12,25 @@ body{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+    body{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px 400px 400px 400px 75px;
+        grid-template-areas:
+            "header header "
+            "member1 member2 "
+            "member3 member4 "
+            "member5 member6 "
+            "footer footer ";
+        justify-items: center;
+    }
 
+    .member-2{
+        align-self: flex-start !important;
+    }
+    .member-5{
+        align-self: flex-start !important;
+    }
 }
 
 .header{
@@ -27,6 +44,7 @@ body{
     align-self: center;
     font-weight: bold;
     font-size: 40px;
+    text-align: center;
 }
 
 .header-subtitle{
@@ -37,14 +55,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.members-row-1{
-    grid-area: members1;
-    display: flex;
-
-}
-
 .member{
-    /*padding: 16px 40px;*/
     display: flex;
     position: relative;
 }
