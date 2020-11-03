@@ -47,26 +47,35 @@ body{
 .member{
     padding: 16px 40px;
     display: flex;
+    position: relative;
 }
 
 .member__role{
     transform: rotate(90deg);
     align-self: flex-start;
-    padding: 32px 0px;
     font-family: 'PT Serif', serif;
+    margin: 0;
+    position: absolute;
+    right: -10px;
+    top:  40px;
 }
 
-.member-2{
-    align-self: flex-end;
-    /*background-image: url("images/people-2442565_640.jpg");*/
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    /*width: 100px;*/
-
+.member__role--long{
+    transform: rotate(90deg);
+    align-self: flex-start;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    position: absolute;
+    right: -40px;
+    top: 65px;
 }
 .member-2{
     align-self: flex-end;
 
+}
+
+.member-5{
+    align-self: flex-end;
 }
 .member-1__image{
     background-image: url("images/entrepreneur-593371_640.jpg");
@@ -91,15 +100,12 @@ body{
     background-image: url("images/beanie-2562646_640.jpg");
 }
 
-.member-5{
-    align-self: flex-end;
-}
 
 .member__image{
     background-position: center;
     background-size: cover;
-    height: 300px;
-    width: 140px;
+    height: 260px;
+    width: 160px;
 }
 
 .member__name{
