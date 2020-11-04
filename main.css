@@ -24,7 +24,6 @@ body{
             "footer footer ";
         justify-items: center;
     }
-
     .member-2{
         align-self: flex-start !important;
     }
@@ -33,12 +32,46 @@ body{
     }
 }
 
+@media only screen and (max-width: 430px) {
+    body{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 200px 150px 400px  400px 400px 400px 400px 400px 75px;
+        grid-template-areas:
+            "header"
+            "header"
+            "member1"
+            "member2"
+            "member3"
+            "member4"
+            "member5"
+            "member6"
+            "footer";
+        justify-items: center;
+    }
+    .member-2{
+        align-self: flex-start !important;
+    }
+    .member-5{
+        align-self: flex-start !important;
+    }
+    .header{
+        grid-area: header;
+        width: 100%;
+        display: block !important;
+    }
+    .header-subtitle-tittle{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+}
+
 .header{
     grid-area: header;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
-
 .header__title{
     font-family: 'PT Serif', serif;
     align-self: center;
@@ -49,6 +82,7 @@ body{
 
 .header-subtitle{
     width: 400px;
+    justify-self: flex-end;
 }
 
 .header-subtitle-tittle{
