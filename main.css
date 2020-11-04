@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+
+}
 body{
     display: grid;
     margin: 0;
@@ -9,10 +13,9 @@ body{
             "member4 member5 member6"
             "footer footer footer";
     justify-items: center;
-
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     body{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 200px 400px 400px 400px 75px;
@@ -24,11 +27,26 @@ body{
             "footer footer ";
         justify-items: center;
     }
+    .member-1{
+        justify-self: center  !important;
+    }
     .member-2{
+        justify-self: center  !important;
         align-self: flex-start !important;
+    }
+    .member-3{
+        justify-self: center  !important;
+    }
+    .member-4{
+        justify-self: center  !important;
     }
     .member-5{
         align-self: flex-start !important;
+        justify-self: center  !important;
+
+    }
+    .member-6{
+        justify-self: center  !important;
     }
 }
 
@@ -48,11 +66,24 @@ body{
             "footer";
         justify-items: center;
     }
+    .member-1{
+        justify-self: center  !important;
+    }
+
     .member-2{
         align-self: flex-start !important;
     }
+    .member-3{
+        justify-self: center  !important;
+    }
+    .member-4{
+        justify-self: center  !important;
+    }
     .member-5{
         align-self: flex-start !important;
+    }
+    .member-6{
+        justify-self: center  !important;
     }
     .header{
         grid-area: header;
@@ -62,6 +93,10 @@ body{
     .header-subtitle-tittle{
         font-family: 'Poppins', sans-serif;
         text-align: center;
+    }
+    .header-subtitle-text{
+        text-align: center;
+        padding: 8px;
     }
 
 }
@@ -88,7 +123,9 @@ body{
 .header-subtitle-tittle{
     font-family: 'Poppins', sans-serif;
 }
+.header-subtitle-text{
 
+}
 .member{
     display: flex;
     position: relative;
@@ -115,22 +152,26 @@ body{
 }
 .member-1{
     grid-area: member1;
+    justify-self: end;
 }
 .member-2{
     grid-area: member2;
     align-self: flex-end;
 }
 .member-3{
+    justify-self: start;
     grid-area: member3;
 }
 .member-4{
     grid-area: member4;
+    justify-self: end;
 }
 .member-5{
     grid-area: member5;
     align-self: flex-end;
 }
 .member-6{
+    justify-self: start;
     grid-area: member6;
 }
 .member-1__image{
@@ -152,6 +193,7 @@ body{
 .member-5__image{
     background-image: url("images/girl-657753_640.jpg");
 }
+
 .member-6__image{
     background-image: url("images/beanie-2562646_640.jpg");
 }
