@@ -6,7 +6,7 @@ body{
     display: grid;
     margin: 0;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px 400px 400px 75px;
+    grid-template-rows: 200px 400px 400px auto;
     grid-template-areas:
             "header header header"
             "member1 member2 member3"
@@ -32,13 +32,15 @@ body{
     }
     .member-2{
         justify-self: center  !important;
-        align-self: flex-start !important;
+        align-self: flex-end !important;
     }
     .member-3{
         justify-self: center  !important;
     }
     .member-4{
         justify-self: center  !important;
+        align-self: flex-end !important;
+
     }
     .member-5{
         align-self: flex-start !important;
@@ -47,6 +49,8 @@ body{
     }
     .member-6{
         justify-self: center  !important;
+        align-self: flex-end !important;
+
     }
 }
 
@@ -135,20 +139,9 @@ body{
     transform: rotate(90deg);
     align-self: flex-start;
     font-family: 'PT Serif', serif;
-    margin: 0;
-    position: absolute;
-    right: -50px;
-    top: 25px;
-}
+    transform-origin: left top;
+    margin-left: 30px;
 
-.member__role--long{
-    transform: rotate(90deg);
-    align-self: flex-start;
-    font-family: 'PT Serif', serif;
-    margin: 0;
-    position: absolute;
-    right: -70px;
-    top: 50px;
 }
 .member-1{
     grid-area: member1;
