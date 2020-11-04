@@ -28,14 +28,14 @@ body{
         justify-items: center;
     }
     .member-1{
-        justify-self: center  !important;
+        justify-self: end  !important;
     }
     .member-2{
         justify-self: center  !important;
         align-self: flex-end !important;
     }
     .member-3{
-        justify-self: center  !important;
+        justify-self: end  !important;
     }
     .member-4{
         justify-self: center  !important;
@@ -44,7 +44,7 @@ body{
     }
     .member-5{
         align-self: flex-start !important;
-        justify-self: center  !important;
+        justify-self: end  !important;
 
     }
     .member-6{
@@ -72,22 +72,37 @@ body{
     }
     .member-1{
         justify-self: center  !important;
+        align-self: flex-start  !important;
+
     }
 
     .member-2{
-        align-self: flex-start !important;
+        justify-self: center  !important;
+        align-self: flex-start  !important;
+        width: 270px;
+        
+
     }
     .member-3{
         justify-self: center  !important;
+        align-self: flex-start  !important;
+
     }
     .member-4{
         justify-self: center  !important;
+        align-self: flex-start  !important;
+
     }
     .member-5{
-        align-self: flex-start !important;
+        justify-self: center  !important;
+        align-self: flex-start  !important;
+
+
     }
     .member-6{
         justify-self: center  !important;
+        align-self: flex-start  !important;
+
     }
     .header{
         grid-area: header;
